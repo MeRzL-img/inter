@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+  <link rel="stylesheet" href="./styles/main.css">
+</head>
+<body>
+	{% include './components/main/block.twig'%}
+  {% include './components/main/block--simple.twig'%}
+  <table class='table'>
+    <tbody>
+      {% include './components/main/transaction.twig'%}
+    </tbody>
+  </table>
+  {% include './components/base/show-all.twig'%}
+  <table class='table'>
+    <tbody>
+      {% include './components/validators/validator.twig'%}
+    </tbody>
+  </table>
+</body>
+</html>
